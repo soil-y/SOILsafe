@@ -37,9 +37,9 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    QCoreApplication::setOrganizationName("Etherdiene");
-    QCoreApplication::setOrganizationDomain("etherwall.com");
-    QCoreApplication::setApplicationName("Etherwall");
+    QCoreApplication::setOrganizationName("SOIL");
+    QCoreApplication::setOrganizationDomain("");
+    QCoreApplication::setApplicationName("SOILsafe");
     QCoreApplication::setApplicationVersion("0.9.2");
     app.setWindowIcon(QIcon(QPixmap(":/images/icon")));
 
@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
 
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 
-    log.log("Etherwall started");
+    log.log("SOILsafe started");
 
     ipc.connectToServer(ipcPath);
 

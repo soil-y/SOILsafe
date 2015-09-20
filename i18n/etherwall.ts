@@ -24,7 +24,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Balance (Ether)</source>
+        <source>Balance (SOIL)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -205,7 +205,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Value (Ether)</source>
+        <source>Value (SOIL)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -228,7 +228,7 @@
 <context>
     <name>main</name>
     <message>
-        <source>Etherdiene Ethereum Wallet</source>
+        <source>SOILsafe</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

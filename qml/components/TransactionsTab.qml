@@ -229,7 +229,7 @@ Tab {
                     iconSource: "/images/all"
                     width: sendButton.height
                     height: sendButton.height
-                    tooltip: qsTr("Send all", "send all ether from account")
+                    tooltip: qsTr("Send all", "send all SOIL from account")
                     onClicked: {
                         valueField.text = transactionModel.getMaxValue(fromField.currentIndex, gasField.text)
                     }
@@ -309,7 +309,7 @@ Tab {
             TableViewColumn {
                 horizontalAlignment: Text.AlignRight
                 role: "value"
-                title: qsTr("Value (Ether)")
+                title: qsTr("Value (SOIL)")
                 width: 150
             }
             TableViewColumn {

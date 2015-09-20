@@ -59,7 +59,7 @@ Tab {
 
             Label {
                 id: totalLabel
-                text: qsTr("Wallet total (ether): ")
+                text: qsTr("Wallet total (SOIL): ")
             }
 
             TextField {
@@ -130,7 +130,7 @@ Tab {
             TableViewColumn {
                 horizontalAlignment: Text.AlignRight
                 role: "balance"
-                title: qsTr("Balance (Ether)")
+                title: qsTr("Balance (SOIL)")
                 width: 150
             }
             TableViewColumn {

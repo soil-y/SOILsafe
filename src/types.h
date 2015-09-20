@@ -34,12 +34,12 @@
 namespace Etherwall {
 
 #ifdef Q_OS_WIN32
-    static const QString DefaultIPCPath = "\\\\.\\pipe\\geth.ipc";
+    static const QString DefaultIPCPath = "\\\\.\\pipe\\gsoil.ipc";
 #else
     #ifdef Q_OS_MACX
-    static const QString DefaultIPCPath = QStandardPaths::writableLocation(QStandardPaths::HomeLocation) + "/Library/Ethereum/geth.ipc";
+    static const QString DefaultIPCPath = QStandardPaths::writableLocation(QStandardPaths::HomeLocation) + "/Library/Soil/gsoil.ipc";
     #else
-    static const QString DefaultIPCPath = QStandardPaths::writableLocation(QStandardPaths::HomeLocation) + "/.ethereum/geth.ipc";
+    static const QString DefaultIPCPath = QStandardPaths::writableLocation(QStandardPaths::HomeLocation) + "/.Soil/gsoil.ipc";
     #endif
 #endif
 

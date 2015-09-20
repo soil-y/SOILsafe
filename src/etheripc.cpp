@@ -156,7 +156,7 @@ namespace Etherwall {
     void EtherIPC::connectionTimeout() {
         if ( !fAborted && fSocket.state() != QLocalSocket::ConnectedState ) {
             fSocket.abort();
-            setError("Unable to establish IPC connection to Geth. Make sure Geth is running and try again.");
+            setError("Unable to establish IPC connection to Gsoil. Make sure Gsoil is running and try again.");
             bail();
         }
     }
@@ -395,7 +395,7 @@ namespace Etherwall {
         if ( !result ) {
             setError("Unlock account failure");
             if ( parseVersionNum() == 100002 ) {
-                fError += " Geth v1.0.2 has a bug with unlocking empty password accounts! Consider updating";
+                fError += " Gsoil v1.0.2 has a bug with unlocking empty password accounts! Consider updating";
             }
             emit error();
         }
@@ -480,7 +480,7 @@ namespace Etherwall {
     }
 
     int EtherIPC::parseVersionNum() const {
-        QRegExp reg("^Geth/v([0-9]+)\\.([0-9]+)\\.([0-9]+).*$");
+        QRegExp reg("^Gsoil/v([0-9]+)\\.([0-9]+)\\.([0-9]+).*$");
         reg.indexIn(fClientVersion);
         if ( reg.captureCount() == 3 ) try { // it's geth
             return reg.cap(1).toInt() * 100000 + reg.cap(2).toInt() * 1000 + reg.cap(3).toInt();
@@ -607,7 +607,7 @@ namespace Etherwall {
 
         const int vn = parseVersionNum();
         if ( vn > 0 && vn < 100002 ) {
-            setError("Geth version 1.0.1 and older contain a critical bug! Please update immediately.");
+            setError("Gsoil version 1.0.1 and older contain a critical bug! Please update immediately.");
             emit error();
         }
 
