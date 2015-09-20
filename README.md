@@ -1,6 +1,6 @@
-# SoilWallet
+# SOILsafe
 
-Soil QT5 Wallet
+SOIL QT5 Wallet
 
 SoilWallet is a free software wallet/front-end for GSoil.
 
