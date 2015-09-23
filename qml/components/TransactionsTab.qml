@@ -214,12 +214,7 @@ Tab {
 
                 TextField {
                     id: valueField
-                    validator: DoubleValidator {
-                        bottom: 0.000000000000000001 // should be 1 wei
-                        decimals: 18
-                        locale: "en_US"
-                    }
-
+                    validator: RegExpValidator { regExp: /^(([0-9]*)([\.]?)([0-9]{1,18}))$/ }
                     maximumLength: 50
                     width: 200
                     onTextChanged: transactionWarning.refresh()
