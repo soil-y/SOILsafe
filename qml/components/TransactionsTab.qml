@@ -214,7 +214,7 @@ Tab {
 
                 TextField {
                     id: valueField
-                    validator: RegExpValidator { regExp: /^(([0-9]*)([\.]?)([0-9]{1,18}))$/ }
+                    validator: RegExpValidator { regExp: /^(([0-9]+)([\.]?)([0-9]{1,18}))$/ }
                     maximumLength: 50
                     width: 200
                     onTextChanged: transactionWarning.refresh()
